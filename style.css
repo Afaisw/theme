@@ -563,6 +563,7 @@ a.text-white:focus {
   font-size: 1.1rem;
   font-weight: bold;
   display: block;
+  margin-bottom: -5px;
 }
 
 .card-profile-stats>div .description {
