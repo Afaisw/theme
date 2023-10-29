@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet Dashboard</title>
+    <link rel="stylesheet" href="./stylesimple.css" type="text/css" />
+</head>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-items">
+            <div class="rowHeader">
+                <div>
+
+                    <h2 class="title">New Transaction</h2>
+                </div>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-amount">Amount</label>
+                            <input type="text" id="input-amount" class="form-control form-control-alternative"
+                                placeholder="Amount">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-description">Description</label>
+                            <input type="text" id="input-description" class="form-control form-control-alternative"
+                                placeholder="Description">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-date">Date</label>
+                            <input type="text" id="input-date" class="form-control form-control-alternative"
+                                placeholder="Date">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-control-label mb-2" for="input-date">Type of transaction</label>
+                            <div class="row">
+                                <div>
+                                    <input type="radio" id="deposit" name="type" value="deposit">
+                                      <label for="html">Deposit</label><br>
+                                </div>
+                                <div>
+                                    <input type="radio" id="withdraw" name="type" value="withdraw">
+                                      <label for="html">Withdraw</label><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="rowFooter">
+                <div>
+                    <h2 class="title"></h2>
+                </div>
+                <div class="row">
+                    <button class="btn btn-default">Deposit</button>
+                    <button class="btn btn-default">Withdraw</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex-items">
+            <div class="right-container">
+                <h2>Your Name</h2>
+                <p>Balance</p>
+                <p>Rp 100000</p>
+                <hr>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./dist/main.js"></script>
+
+</html>
